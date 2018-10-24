@@ -3,7 +3,7 @@
 *	Script: NewsAPI script
 *
 */
-<script>
+
 var APIKey = "3adf3d38e8da43b6bb01e6a321713c31";
  
 //INIT Method
@@ -38,4 +38,3 @@ function GetNewsTemplate(news)
 <pre>
 `;
 }
-</script>
