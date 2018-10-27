@@ -9,7 +9,7 @@ $.ajax({
     "https://newsapi.org/v2/top-headlines?sources=cbc-news&apiKey=3adf3d38e8da43b6bb01e6a321713c31",
   method: "GET",
   error: function() {
-    console.log("fucked");
+    console.log("Error");
   },
   success: function(data) {
     processData(data);
