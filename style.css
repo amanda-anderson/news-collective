@@ -1,0 +1,84 @@
+/*
+*   Stylesheet for news app
+*   Author: Amanda Anderson
+*   Date: 2018-10-24
+*/
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #262626;
+}
+
+a:-webkit-any-link {
+    color: #262626;
+    text-decoration: none;
+}
+
+
+/* My own classes etc. */
+
+.articleDiv {
+    width: 500px;
+    height: 500px;
+    background: gray;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    margin-left: 75px;
+}
+
+.author{
+    font-family: 'Raleway', sans-serif;
+    width:300px;
+    height:auto;
+    text-align: center;
+    color: #6b6b6b;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.nav {
+    height: 100%;
+    width: 75px;
+    background: #262626;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    width:300px;
+    height:auto;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #262626;
+    font-weight: bold;
+}
+
+
+.description {
+    font-family: 'Raleway', sans-serif;
+    width:300px;
+    height:auto;
+    color: #262626;
+}
+
+.image {
+    object-fit: cover;
+    width:250px;
+    height:250px;
+    border-radius: 10%;
+}
