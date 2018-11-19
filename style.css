@@ -1,5 +1,5 @@
 /*
-*   Stylesheet for news app
+*   Stylesheet for News App
 *   Author: Amanda Anderson
 *   Date: 2018-10-24
 */
@@ -8,23 +8,53 @@ html, body {
     height: 100%;
 }
 
+body {
+   opacity: 1;
+   transition: 1.5s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
-    color: #262626;
+    color: #dbdbdb;
 }
 
 a:-webkit-any-link {
-    color: #262626;
+    color: #dbdbdb;
     text-decoration: none;
 }
 
+h2 {
+    text-align: center;
+    font-size: 26px;
+}
 
-/* My own classes etc. */
+h4 {
+    text-align: center;
+    font-size: 18px;
+}
 
 .articleDiv {
     width: 500px;
     height: 500px;
-    background: gray;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("background4.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .wrapper {
@@ -36,7 +66,6 @@ a:-webkit-any-link {
     display: -ms-flexbox;
     display: -webkit-flex;
     justify-content: center;
-    margin-left: 75px;
 }
 
 .author{
@@ -44,41 +73,59 @@ a:-webkit-any-link {
     width:300px;
     height:auto;
     text-align: center;
-    color: #6b6b6b;
-    font-weight: bold;
+    color: #dbdbdb;
+    /*font-weight: bold; */
     margin-bottom: 5px;
-}
-
-.nav {
-    height: 100%;
-    width: 75px;
-    background: #262626;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .title {
     font-family: 'Raleway', sans-serif;
     width:300px;
     height:auto;
-    text-align: left;
-    margin-bottom: 5px;
-    color: #262626;
+    text-align: center;
+    padding: 5px;
+    color: #dbdbdb;
     font-weight: bold;
+    font-size: 15px;
+
 }
 
 
 .description {
     font-family: 'Raleway', sans-serif;
     width:300px;
-    height:auto;
-    color: #262626;
+    height:50px;
+    color: #dbdbdb;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    /* To get multi-line truncation */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
 }
 
 .image {
     object-fit: cover;
     width:250px;
     height:250px;
-    border-radius: 10%;
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px
+    
+}
+
+#test {
+    background:rgba(5, 5, 5,0.75);
+    margin: 15px;
+    padding: 14px;
+    border-radius: 2%;
+    filter: grayscale(25%);
+    height: 420px;
 }
