@@ -1,4 +1,9 @@
 
+/* Wait for webpage to load before running js */
+$(document).ready(function() {
+    $('#backgroundfade').fadeOut(1000);
+});
+
 /* Function to fade in the website */
 $(function() {
     $('body').removeClass('fade-out');
