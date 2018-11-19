@@ -1,15 +1,16 @@
-/*
-*	Author: Amanda Anderson
-*	Script: NewsAPI script
-*
-*/
 
+/* Function to fade in the website */
+$(function() {
+    $('body').removeClass('fade-out');
+});
+
+/* Load news articles dynamically */
 $.ajax({
   url:
     "https://newsapi.org/v2/top-headlines?sources=cbc-news&apiKey=3adf3d38e8da43b6bb01e6a321713c31",
   method: "GET",
   error: function() {
-    console.log("Error");
+    console.log("broken");
   },
   success: function(data) {
     processData(data);
@@ -39,7 +40,7 @@ function processData(data) {
         "</div ></a>"
     );
 
-    var $newDiv = $('<div class=' + i + ' style="padding: 20px;"></div>')
+    var $newDiv = $('<div id = "test" class=' + i + ' style=""></div>')
     $(".wrapper").append($newDiv);
     $("." + i).append($image, $author, $title, $description);
     console.log(artUrl);
