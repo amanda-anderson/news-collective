@@ -28,11 +28,17 @@ function processData(data) {
   var articleItems = [];
 
   for (var i = 0; i < data.articles.length; i++) {
-    var author = data.articles[i].author;
+    var author = "CBC News";
     var title = data.articles[i].title;
     var description = data.articles[i].description;
     var artUrl = data.articles[i].url;
     var imgUrl = data.articles[i].urlToImage;
+    
+    if (imgUrl == null) {
+    	imgUrl = "newspaper.png";
+    }
+    
+    if (description == null) continue;
     
     var $image = $('<img class="image" src="' + imgUrl + '"' + "></img>");
     var $author = $('<div class="author">' + author + "</div >");
@@ -75,11 +81,17 @@ function processData(data) {
   var articleItems = [];
 
   for (var i = 0; i < data.articles.length; i++) {
-    var author = data.articles[i].author;
+    var author = "Svenska Dagbladet";
     var title = data.articles[i].title;
     var description = data.articles[i].description;
     var artUrl = data.articles[i].url;
     var imgUrl = data.articles[i].urlToImage;
+    
+    if (imgUrl == null) {
+    	imgUrl = "newspaper.png";
+    }
+    
+    if (description == null) continue;
     
     var $image = $('<img class="image" src="' + imgUrl + '"' + "></img>");
     var $author = $('<div class="author">' + author + "</div >");
@@ -122,16 +134,22 @@ function processData(data) {
   var articleItems = [];
 
   for (var i = 0; i < data.articles.length; i++) {
-    var author = data.articles[i].author;
+    var author = "Tech Crunch";
     var title = data.articles[i].title;
     var description = data.articles[i].description;
     var artUrl = data.articles[i].url;
     var imgUrl = data.articles[i].urlToImage;
     
+    if (imgUrl == null) {
+    	imgUrl = "newspaper.png";
+    }
+    
+    if (description == null) continue;
+    
     var $image = $('<img class="image" src="' + imgUrl + '"' + "></img>");
     var $author = $('<div class="author">' + author + "</div >");
     var $title = $(
-      "<a href=" + artUrl + '><div class="title">' + title + "</div ></a>"
+      "<a href='" + artUrl + "'" + '><div class="title">' + title + "</div ></a>"
     );
     var $description = $(
       "<a href=" +
@@ -169,16 +187,22 @@ function processData(data) {
   var articleItems = [];
 
   for (var i = 0; i < data.articles.length; i++) {
-    var author = data.articles[i].author;
+    var author = "Wired";
     var title = data.articles[i].title;
     var description = data.articles[i].description;
     var artUrl = data.articles[i].url;
     var imgUrl = data.articles[i].urlToImage;
     
+    if (imgUrl == null) {
+    	imgUrl = "newspaper.png";
+    }
+    
+    if (description == null) continue;
+    
     var $image = $('<img class="image" src="' + imgUrl + '"' + "></img>");
     var $author = $('<div class="author">' + author + "</div >");
     var $title = $(
-      "<a href=" + artUrl + '><div class="title">' + title + "</div ></a>"
+      "<a href='" + artUrl + "'" + '><div class="title">' + title + "</div ></a>"
     );
     var $description = $(
       "<a href=" +
@@ -216,11 +240,17 @@ function processData(data) {
   var articleItems = [];
 
   for (var i = 0; i < data.articles.length; i++) {
-    var author = data.articles[i].author;
+    var author = "ESPN";
     var title = data.articles[i].title;
     var description = data.articles[i].description;
     var artUrl = data.articles[i].url;
     var imgUrl = data.articles[i].urlToImage;
+    
+    if (imgUrl == null) {
+    	imgUrl = "newspaper.png";
+    }
+    
+    if (description == null) continue;
     
     var $image = $('<img class="image" src="' + imgUrl + '"' + "></img>");
     var $author = $('<div class="author">' + author + "</div >");
@@ -263,11 +293,17 @@ function processData(data) {
   var articleItems = [];
 
   for (var i = 0; i < data.articles.length; i++) {
-    var author = data.articles[i].author;
+    var author = "CNN";
     var title = data.articles[i].title;
     var description = data.articles[i].description;
     var artUrl = data.articles[i].url;
     var imgUrl = data.articles[i].urlToImage;
+    
+    if (imgUrl == null) {
+    	imgUrl = "newspaper.png";
+    }
+    
+    if (description == null) continue;
     
     var $image = $('<img class="image" src="' + imgUrl + '"' + "></img>");
     var $author = $('<div class="author">' + author + "</div >");
@@ -310,11 +346,17 @@ function processData(data) {
   var articleItems = [];
 
   for (var i = 0; i < data.articles.length; i++) {
-    var author = data.articles[i].author;
+    var author = "CBC News";
     var title = data.articles[i].title;
     var description = data.articles[i].description;
     var artUrl = data.articles[i].url;
     var imgUrl = data.articles[i].urlToImage;
+    
+    if (imgUrl == null) {
+    	imgUrl = "newspaper.png";
+    }
+    
+    if (description == null) continue;
     
     var $image = $('<img class="image" src="' + imgUrl + '"' + "></img>");
     var $author = $('<div class="author">' + author + "</div >");
@@ -357,11 +399,15 @@ function processData(data) {
   var articleItems = [];
 
   for (var i = 0; i < data.articles.length; i++) {
-    var author = data.articles[i].author;
+    var author = "Al Jazeera";
     var title = data.articles[i].title;
     var description = data.articles[i].description;
     var artUrl = data.articles[i].url;
     var imgUrl = data.articles[i].urlToImage;
+    
+    if (imgUrl == null) {
+    	imgUrl = "newspaper.png";
+    }
     
     if (description == null) continue;
     
