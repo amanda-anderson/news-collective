@@ -1,15 +1,15 @@
 
-/* Fade in background */
 $(document).ready(function() {
     $('#backgroundfade').fadeOut(1000);
 });
 
+/* Function to fade in the website */
 $(function() {
     $('body').removeClass('fade-out');
 });
 
 /* Load news articles dynamically */
-/* Initial Articles From CBC */
+/* Initial Articles CBC */
 $('.wrapper').empty();
 
 $.ajax({
@@ -42,7 +42,7 @@ function processData(data) {
     var $image = $('<img class="image" src="' + imgUrl + '"' + "></img>");
     var $author = $('<div class="author">' + author + "</div >");
     var $title = $(
-      "<a href=" + artUrl + '><div class="title">' + title + "</div ></a>"
+      "<a href='" + artUrl + "'" + '><div class="title">' + title + "</div ></a>"
     );
     var $description = $(
       "<a href=" +
@@ -128,7 +128,7 @@ function fill(sourceSelection) {
 	    var $image = $('<img class="image" src="' + imgUrl + '"' + "></img>");
 	    var $author = $('<div class="author">' + author + "</div >");
 	    var $title = $(
-	      "<a href=" + artUrl + '><div class="title">' + title + "</div ></a>"
+	      "<a href='" + artUrl + "'" + '><div class="title">' + title + "</div ></a>"
 	    );
 	    var $description = $(
 	      "<a href=" +
