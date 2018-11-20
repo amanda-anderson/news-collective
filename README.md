@@ -1,3 +1,7 @@
-# News-Collective
+# News Collective
 ### Powered by NewsAPI ###
-Progressive web app for viewing breaking news stories from around the globe. (Work in progress)
+A dynamic, one-page news app for reading the top 10 headlines from a variety of news sources. This app offers a convenient alternative to visiting each news publisher individually.
+
+Currently Working On:
+- Transition to progressive web app, so it can be downloaded through the app store and used offline.
+- Allowing users to create a custom profile from the over 30,000 news sources, so they can create a custom newsfeed based on their own interests
