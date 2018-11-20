@@ -1,6 +1,6 @@
 # News Collective
 ### Powered by NewsAPI ###
-A dynamic, one-page news app for reading the top 10 headlines from a variety of news sources. This app offers a convenient alternative to visiting each news publisher individually.
+A dynamic, one-page news app for reading the top 10 headlines from a variety of news sources. This app offers a convenient alternative to visiting each publisher individually.
 
 Currently Working On:
 - Transition to progressive web app, so it can be downloaded through the app store and used offline.
