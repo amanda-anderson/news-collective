@@ -12,8 +12,18 @@
 <script>document.body.className += ' fade-out';</script>
 
 <div class="top">
-  <h2>Top US News Stories</h2>
-  <h4><a href="https://newsapi.org/">Powered By NewsAPI</a></h4>
+  <h2>News Collective</h2>
+  <h3>Select news source:</h3>
+</div>
+
+<div class="sourceSelector">
+  <button onclick="fillAlJazeera()" id="icon" style="background: url(news_icons//al_jazeera_eng.png) no-repeat; background-size: 100%;"></button>
+  <button onclick="fillCBC()" id="icon" style="background: url(news_icons//cbc.png) no-repeat; background-size: 100%;"></button>
+  <button onclick="fillCNN()"id="icon" style="background: url(news_icons//cnn.png) no-repeat; background-size: 100%;"></button>
+  <button onclick="fillESPN()"id="icon" style="background: url(news_icons//espn.png) no-repeat; background-size: 100%;"></button>
+  <button onclick="fillSVD()"id="icon" style="background: url(news_icons//svd.png) no-repeat; background-size: 100%;"></button>
+  <button onclick="fillTechCrunch()" id="icon" style="background: url(news_icons//tech_crunch.png) no-repeat; background-size: 100%;"></button>
+  <button onclick="fillWired()" id="icon" style="background: url(news_icons//wired.png) no-repeat; background-size: 100%;"></button>
 </div>
 
 <div class="wrapper">
@@ -21,6 +31,7 @@
 </div>
 
 </body>
+
 <footer>
 <div id="backgroundfade"></div>
 </footer>
