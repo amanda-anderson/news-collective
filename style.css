@@ -42,6 +42,11 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+a:-webkit-ms-link {
+    color: #dbdbdb;
+    text-decoration: none;
+}
+
 h2 {
     text-align: center;
     font-size: 26px;
