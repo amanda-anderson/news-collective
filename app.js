@@ -1,17 +1,15 @@
 
+/* Fade in background */
 $(document).ready(function() {
     $('#backgroundfade').fadeOut(1000);
 });
 
-
-/* Function to fade in the website */
 $(function() {
     $('body').removeClass('fade-out');
 });
 
-
 /* Load news articles dynamically */
-/* Initial Articles CBC */
+/* Initial Articles From CBC */
 $('.wrapper').empty();
 
 $.ajax({
