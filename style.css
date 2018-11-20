@@ -42,9 +42,9 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
-a:-webkit-ms-link {
+a {
     color: #dbdbdb;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 h2 {
