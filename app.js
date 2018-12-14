@@ -1,57 +1,51 @@
-
+// Fade in the website
 $(document).ready(function() {
     $('#backgroundfade').fadeOut(1000);
 });
 
-/* Function to fade in the website */
 $(function() {
     $('body').removeClass('fade-out');
 });
 
-/* Load news articles dynamically */
-/* Change Articles With User Selection */
+// Load news articles dynamically
+// Change Articles With User Selection
 function fill(sourceSelection) {
 
 	$('.wrapper').empty();
 
 	if (sourceSelection == "espn") {
-		var source = "espn";
+		var source = "sources=espn";
 		var author = "ESPN";
 	}
 
 	else if (sourceSelection == "cnn") {
-		var source = "cnn";
+		var source = "sources=cnn";
 		var author = "CNN";
 	}
 
 	else if (sourceSelection == "cbc") {
-		var source = "cbc-news";
+		var source = "sources=cbc-news";
 		var author = "CBC News";
 	}
 
 	else if (sourceSelection == "aljazeera") {
-		var source = "al-jazeera-english";
+		var source = "sources=al-jazeera-english";
 		var author = "Al Jazeera";
 	}
 
 	else if (sourceSelection == "wired") {
-		var source = "wired";
+		var source = "sources=wired";
 		var author = "Wired";
 	}
 
 	else if (sourceSelection == "techcrunch") {
-		var source = "techcrunch";
+		var source = "sources=techcrunch";
 		var author = "Tech Crunch";
 	}
 
-	else if (sourceSelection == "svd") {
-		var source = "svenska-dagbladet";
-		var author = "Svenska Dagbladet";
-	}
-
 	$.ajax({
-	  url:"https://newsapi.org/v2/top-headlines?sources=" + source + "&apiKey=3adf3d38e8da43b6bb01e6a321713c31",
-	  method: "GET",
+	  url:"https://newsapi.org/v2/top-headlines?" + source + "&apiKey=3adf3d38e8da43b6bb01e6a321713c31",
+		method: "GET",
 	  error: function() {
 	    console.log("broken");
 	  },
