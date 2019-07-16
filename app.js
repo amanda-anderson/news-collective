@@ -79,6 +79,7 @@ function fill(sourceSelection) {
 										 + "></img>"
 										 + "</a>"
 										 );
+										 
 	    var $author = $('<div class="author">' + author + "</div >");
 	    var $title = $(
 	      "<a href='" + artUrl + "'" + '><div class="title">' + title + "</div ></a>"
