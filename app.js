@@ -65,15 +65,25 @@ function fill(sourceSelection) {
 	    
 	    if (imgUrl == null) {
 	    	imgUrl = "newspaper.png";
-	    }
-	    
+			}
+			
 	    if (description == null) continue;
 	    
-	    var $image = $('<img class="image" src="' + imgUrl + '"' + "></img>");
+			var $image = $(
+										 '<a href='
+										 + artUrl +
+										 ">"
+										 + '<img class="image" src="'
+										 + imgUrl
+										 + '"'
+										 + "></img>"
+										 + "</a>"
+										 );
 	    var $author = $('<div class="author">' + author + "</div >");
 	    var $title = $(
 	      "<a href='" + artUrl + "'" + '><div class="title">' + title + "</div ></a>"
-	    );
+			);
+			
 	    var $description = $(
 	      "<a href=" +
 	        artUrl +
