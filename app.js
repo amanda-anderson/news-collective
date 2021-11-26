@@ -44,7 +44,7 @@ function fill(sourceSelection) {
 	}
 
 	$.ajax({
-	  url:"https://newsapi.org/v2/top-headlines?" + source + "&apiKey=3adf3d38e8da43b6bb01e6a321713c31",
+	  url:"https://newsapi.org/v2/top-headlines?" + source + "&apiKey=ef61de27453e419da1b9ab7d3ac46e44",
 		method: "GET",
 	  error: function() {
 	    console.log("broken");
